@@ -13,6 +13,6 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v2
     - name: install deps
-      run: sudo apt-get install -y graphviz
+      run: sudo apt-get install -y graphviz ghostscript
     - name: build
       run: make
