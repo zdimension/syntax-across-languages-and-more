@@ -12,5 +12,7 @@ jobs:
     steps:
     - name: checkout repo
       uses: actions/checkout@v2
+    - name: install deps
+      run: sudo apt-get install -y graphviz
     - name: build
       run: make
