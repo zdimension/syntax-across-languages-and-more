@@ -16,3 +16,19 @@ jobs:
       run: sudo apt-get install -y graphviz ghostscript
     - name: build
       run: make
+    - uses: actions/upload-artifact@v3
+      with:
+        name: output
+        path: |
+          diagram-light.png
+          diagram-light-thumbnail.png
+          diagram.ps.gz
+          diagram-thumbnail.png
+          diagram.png
+          diagram.dot
+          concepts-history.html
+          diagram-light.pdf
+          diagram-light.ps.gz
+          syntax-across-languages.html
+          diagram.pdf
+          diagram-light.dot
